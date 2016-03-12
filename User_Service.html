@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>User Service</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div ng-app="userServiceApp" ng-controller="UserController">
+    <form>
+        <label>Name</label>
+        <input type="text" name="name" ng-model="user.name" /><br/>
+        <label>Email</label>
+        <input type="text" name="email" ng-model="user.email" /><br/>
+        <label>Phone</label>
+        <input type="text" name="phone" ng-model="user.phone" /><br/>
+        <br/>
+        <input type="button" value="Save" ng-click="saveUsers()" />
+    </form>
+    <table>
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

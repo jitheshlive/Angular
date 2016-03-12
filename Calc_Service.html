@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Calculator Service</title>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div ng-app="CalcServiceApp">
+    <div ng-controller="CalculatorController">
+        Enter a number:
+        <input type="number" ng-model="number" />
+        <button ng-click="doSquare()">X<sup>2</sup></button>
+        <button ng-click="doCube()">X<sup>3</sup></button>
+
+        <div>Answer: {{answer}}</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html ng-app="mainApp">
+	<head>
+		<title>My Sample App</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="angular-route.min.js"></script>
+		<script src="script.js"></script>
+		<style>
+			table, th , td {
+			 border: 1px solid grey;
+			  border-collapse: collapse;
+			 padding: 5px;
+			}
+			table tr:nth-child(odd) {
+			 background-color: #f2f2f2;
+			}
+			table tr:nth-child(even) {
+			 background-color: #ffffff;
+			}
+		</style>
+	</head>
+		<body>
+			 <ng-view></ng-view>
+			 <ul>
+			 	<li><a href="#/link1"> Link1</a></li>
+			 	<li><a href="#/link2"> Link2</a></li>
+			 	<li><a href="#/student"> Student</a></li>
+			 	<li><a href="#"> Clear It</a></li>
+			 </ul>
+		</div>
+	</body>
+</html>
